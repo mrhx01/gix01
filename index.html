@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Gix01 (beta) - Advanced GitHub search & analytics with CIA-level insights">
+  <meta name="author" content="Gix01">
+  <title>Gix01 (beta) · GitHub Omniscope</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%234062f0'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-family='monospace'%3EG%3C/text%3E%3C/svg%3E">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <h1>Gix01 (beta) · GitHub Omniscope</h1>
+      <span class="version-badge">v1.0.0</span>
+    </div>
+    <button class="mode-toggle" id="darkModeToggle">🌓 Dark / Light</button>
+  </div>
+
+  <!-- Trending & Insights Panel (CIA touch) -->
+  <div class="trending-panel">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3>📈 Live Intel · Trending Repos (last 7 days)</h3>
+      <span style="font-size:0.7rem;">🔥 click any badge to search</span>
+    </div>
+    <div id="trendingRepos" class="trending-grid">
+      <div class="loader-small"></div> loading trends...
+    </div>
+  </div>
+
+  <div class="search-hub">
+    <div class="resource-tabs" id="resourceTabs">
+      <button data-type="repositories" class="type-btn active">📚 Repos</button>
+      <button data-type="users" class="type-btn">👥 Users</button>
+      <button data-type="issues" class="type-btn">📌 Issues</button>
+      <button data-type="code" class="type-btn">📄 Code</button>
+    </div>
+    <div id="dynamicFilters"></div>
+    <div class="row-buttons">
+      <button class="btn btn-primary" id="searchBtn">✨ Advanced Search</button>
+      <button class="btn" id="resetBtn">⟳ Reset</button>
+      <div class="view-controls" id="viewControls">
+        <button data-view="grid" class="view-btn active">📱 Grid</button>
+        <button data-view="horizontal" class="view-btn">📋 Horizontal</button>
+        <button data-view="compact" class="view-btn">🗂️ Compact</button>
+      </div>
+    </div>
+    <div class="token-guide-card" style="margin-top: 0.8rem; padding: 1rem;">
+      <details>
+        <summary style="cursor:pointer; font-weight:600;">🔐 GitHub Token (required for deep stats) — <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--accent);">🔗 Get token here</a></summary>
+        <div class="guide-content">
+          <p>1. Click above link → Generate new token (classic)<br>
+          2. Scopes: <strong>public_repo, user</strong><br>
+          3. Copy token → paste below. <strong>Without token: 60 req/hour | With token: 5000/hour + full user analytics</strong><br>
+          ⚠️ <strong>Deep stats (contributions, streak, graph) require a valid token.</strong></p>
+        </div>
+      </details>
+      <div class="token-wrapper" style="margin-top: 0.5rem;">
+        <input type="password" id="githubToken" placeholder="Paste GitHub Personal Access Token (saved in browser)" autocomplete="off">
+        <button class="eye-icon" id="toggleTokenVisibility">👁️</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
+    <h3>🔍 Search Results</h3>
+    <div class="stats-badge" id="resultStats">Ready</div>
+  </div>
+  <div id="resultsContainer"></div>
+  <div id="paginationWrapper" style="display: none;"></div>
+  <footer>
+    Gix01 (beta) v1.0.0 — Advanced GitHub search with CIA-level analytics · Token stored locally · 
+    <a href="#" id="exportResultsLink" style="color:var(--accent);">📎 Export current results (JSON)</a>
+  </footer>
+</div>
+
+<!-- Modal for deep stats & messages -->
+<div id="statsModal" class="modal-overlay">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h3 id="modalUsername">👤 Intelligence Report</h3>
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+    </div>
+    <div id="modalContent">
+      <div style="text-align:center"><div class="loader-small"></div> Loading analytics...</div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
