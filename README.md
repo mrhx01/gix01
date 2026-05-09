@@ -1,4 +1,4 @@
-<img width="1366" height="607" alt="image" src="https://github.com/user-attachments/assets/1dd398ba-1172-4ae3-871d-fcbd1bc6cf09" /># gix01
+# gix01
 
 # 🔮 Gix01 (beta) – Advanced GitHub Search & Analytics
 
@@ -6,8 +6,7 @@
 A powerful, all‑in‑one GitHub search tool with analytics, built in pure HTML/CSS/JS.  
 Deploy instantly on GitHub Pages – no backend, no build step.
 
-![Gix01 screenshot](<img width="1366" height="607" alt="image" src="https://github.com/user-attachments/assets/44db704b-2408-4326-a822-5ec9e308817b" />
-)  
+<img width="1366" height="607" alt="image" src="https://github.com/user-attachments/assets/1dd398ba-1172-4ae3-871d-fcbd1bc6cf09" />
 
 ## 🚀 Live Demo
 👉 [https://mrhx01.github.io/Gix01](https://mrhx01.github.io/Gix01)
