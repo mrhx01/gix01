@@ -9,7 +9,7 @@ Deploy instantly on GitHub Pages – no backend, no build step.
 <img width="1366" height="607" alt="image" src="https://github.com/user-attachments/assets/1dd398ba-1172-4ae3-871d-fcbd1bc6cf09" />
 
 ## 🚀 Live Demo
-👉 [https://mrhx01.github.io/Gix01](https://mrhx01.github.io/Gix01)
+👉 [https://mrhx01.github.io/Gix01](https://mrhx01.github.io/gix01)
 
 ## ✨ Features
 
