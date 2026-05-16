@@ -8,8 +8,10 @@ Deploy instantly on GitHub Pages – no backend, no build step.
 
 <img width="1366" height="607" alt="image" src="https://github.com/user-attachments/assets/1dd398ba-1172-4ae3-871d-fcbd1bc6cf09" />
 
+
 ## 🚀 Live Demo
 👉 [https://mrhx01.github.io/Gix01](https://mrhx01.github.io/gix01)
+
 
 ## ✨ Features
 
@@ -27,6 +29,7 @@ Deploy instantly on GitHub Pages – no backend, no build step.
 - 💬 **Modal popups** – for stats & error messages (no browser alerts)
 - ⚡ **Pagination** – browse through up to 1,000 results
 
+
 ## 🧰 How to Use
 
 1. **Open the app** – either locally or on GitHub Pages.
@@ -38,6 +41,7 @@ Deploy instantly on GitHub Pages – no backend, no build step.
    (scopes: `public_repo`, `user`), then click **“Load deep stats”** on any user card.
 6. **Change view** – use the Grid / Horizontal / Compact buttons.
 7. **Export data** – click the footer link to download current results as JSON.
+
 
 ## 🔐 GitHub Token Setup (Optional but Recommended)
 
@@ -67,6 +71,7 @@ Simply open the `index.html` file in any modern browser. No server or dependenci
 5. Save – your site will be live at `https://<username>.github.io/<repository-name>/`.
 
 
+
 ## 🧪 Technologies Used
 
 - HTML5 / CSS3 (CSS Grid, Flexbox, custom variables for theming)
@@ -74,15 +79,18 @@ Simply open the `index.html` file in any modern browser. No server or dependenci
 - [Chart.js](https://www.chart.js/) – for contribution charts
 - GitHub REST API v3
 
+
 ## 🤝 Contributing
 
 Feel free to open issues or submit pull requests. Suggestions for new filters, extra visualisations, or performance improvements are welcome!
+
 
 ## 📄 License
 
 MIT – use, modify, and share as you like.
 
 ---
+
 
 **Made with ❤️ for the GitHub community.**  
 *Gix01 – because searching GitHub should be powerful and beautiful.*
