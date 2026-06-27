@@ -91,6 +91,10 @@ MIT – use, modify, and share as you like.
 
 ---
 
+This project exists thanks to 
+[all the people who contribute](https://github.com/mrhx01/gix01/graphs/contributors).
+
+---
 
 **Made with ❤️ for the GitHub community.**  
 *Gix01 – because searching GitHub should be powerful and beautiful.*
