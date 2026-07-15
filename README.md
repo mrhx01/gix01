@@ -2,6 +2,8 @@
 
 # 🔮 Gix01 (beta) – Advanced GitHub Search & Analytics
 
+
+
 **Version 1.0.0**  
 A powerful, all‑in‑one GitHub search tool with analytics, built in pure HTML/CSS/JS.  
 Deploy instantly on GitHub Pages – no backend, no build step.
